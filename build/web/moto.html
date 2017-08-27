@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moto</title>
+    </head>
+    <body>
+
+        <div align="center" border="1">
+            <h1>Moto</h1>
+            <br>
+            <img border="1" alt="Moto" src="moto.png"/>
+            <br>
+            <form action="MotoController" method="post">
+
+                <table>
+                    <tr>
+                        <td>Nome: </td>
+                        <td><input type="text" name="nome" /></td>
+                    </tr>
+                    <tr>
+                        <td>Marca: </td>
+                        <td><input type="text" name="marca" /></td>
+                    </tr>
+                    <tr>
+                        <td>Ano: </td>
+                        <td><input type="number" name="ano" /></td>
+                    </tr>
+                    <tr>
+                        <td>Potencia: </td>
+                        <td><input type="number" name="potencia" /></td>
+                    </tr>
+                </table>
+                <input type="hidden" name="flag" value="create"/>
+                <input type="submit" value="Cadastrar"/>
+            </form>	
+
+            <form action="MotoController" method="post">
+                <input type="hidden" name="flag" value="list" /> 
+                <input type="submit" value="Alterar/Excluir Motos" />
+            </form>
+            
+            <br>
+            <a href="index.html">Voltar</a>
+            
+        </div>
+    </body>
+</html>

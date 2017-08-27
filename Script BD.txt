@@ -1,0 +1,19 @@
+CREATE DATABASE carro;
+
+CREATE TABLE carro
+(
+	id int primary key auto_increment,
+	nome varchar(100),
+	marca varchar(30),
+	ano int,
+	potencia int
+);
+
+CREATE TABLE moto
+(
+	id int primary key auto_increment,
+	nome varchar(100),
+	marca varchar(30),
+	ano int,
+	potencia int
+);
